@@ -40,6 +40,7 @@ app.use('/premium', premiumRoutes);
 app.use('/password',forgetpasswordRoutes);
 
 app.use('/', (req, res) => {
+    console.log(`${req.url}`);
     const filePath = path.join(__dirname, 'views', `${req.url}`);
     res.sendFile(filePath);
 });
