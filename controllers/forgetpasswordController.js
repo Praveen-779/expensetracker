@@ -54,7 +54,7 @@ exports.resetpassword = async (req, res, next) => {
       response.update({ isactive: false });
       res.send(
         `<html>
-        <form action="http://localhost:7000/password/updatepassword/${uuid}" >
+        <form action="http://51.20.103.86:7000/password/updatepassword/${uuid}" >
         <label for="password">Enter New Password</label>
         <input type="password" name="password" id="password">
         <button type="submit">Reset Password</button>
