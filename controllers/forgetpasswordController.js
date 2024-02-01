@@ -30,7 +30,7 @@ exports.forgetPasswordmail = async (req, res, next) => {
         from: 'bbab1910430@skdc.edu.in',
         to: email,
         subject: 'forget password',
-        html: `<a href="http://localhost:7000/password/resetpassword/${uuid}">Reset Password</a>`
+        html: `<a href="http://51.20.103.86:7000/password/resetpassword/${uuid}">Reset Password</a>`
       };
 
       const info = await transporter.sendMail(mailOptions)
